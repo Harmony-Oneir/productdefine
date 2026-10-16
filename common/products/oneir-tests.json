@@ -1,0 +1,15 @@
+{
+  "product_name": "oneir-tests",
+  "device_company": "ohos",
+  "target_cpu": "x86_64",
+  "board": "sdk",
+  "version": "3.0",
+  "type": "standard",
+  "build_selinux": false,
+  "subsystems": [
+    {
+      "subsystem": "communication",
+      "components": [ { "component": "ipc", "features": [] } ]
+    }
+  ]
+}
