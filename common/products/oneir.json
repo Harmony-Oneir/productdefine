@@ -65,6 +65,10 @@
       "components": [
         {
           "component": "testfwk_cangjie_wrapper"
+        },
+        {
+          "component": "arkxtest",
+          "features": []
         }
       ]
     },
@@ -151,9 +155,6 @@
         },
         {
           "component": "ace_engine_lite"
-        },
-        {
-          "component": "ui_lite"
         },
         {
           "component": "arkui_cangjie_wrapper"
@@ -263,9 +264,6 @@
         },
         {
           "component": "ets_utils"
-        },
-        {
-          "component": "utils_lite"
         },
         {
           "component": "qrcode_generator"
@@ -445,82 +443,17 @@
           "component": "hdf"
         },
         {
+          "component": "drivers_interface_ril",
+          "features": []
+        },
+        {
           "component": "drivers_interface_display"
+        },
+        { 
+          "component": "drivers_interface_usb" 
         },
         {
           "component": "hdf_core"
-        },
-        {
-          "component": "drivers_peripheral_display",
-          "features": [
-            "drivers_peripheral_display_vdi_default = true",
-            "drivers_peripheral_display_community = true"
-          ]
-        },
-        {
-          "component": "drivers_devhost"
-        },
-        {
-          "component": "drivers_interface_user_auth"
-        },
-        {
-          "component": "drivers_peripheral_user_auth"
-        },
-        {
-          "component": "drivers_interface_power"
-        },
-        {
-          "component": "drivers_peripheral_power"
-        },
-        {
-          "component": "drivers_interface_user_auth"
-        },
-        {
-          "component": "drivers_peripheral_user_auth"
-        },
-        {
-          "component": "drivers_interface_power"
-        },
-        {
-          "component": "drivers_peripheral_power"
-        },
-        {
-          "component": "drivers_interface_camera"
-        },
-        {
-          "component": "drivers_interface_audio"
-        },
-        {
-          "component": "drivers_interface_distributed_audio"
-        },
-        {
-          "component": "drivers_peripheral_audio"
-        },
-        {
-          "component": "drivers_interface_wlan"
-        },
-        {
-          "component": "drivers_interface_huks"
-        },
-        {
-          "component": "drivers_peripheral_huks"
-        },
-        {
-          "component": "drivers_interface_battery"
-        },
-        {
-          "component": "drivers_peripheral_battery"
-        }
-      ]
-    },
-    {
-      "subsystem": "drivers",
-      "components": [
-        {
-          "component": "drivers_interface_display"
-        },
-        {
-          "component": "drivers_peripheral_display"
         },
         {
           "component": "drivers_interface_codec"
@@ -547,9 +480,6 @@
           "component": "drivers_interface_audio"
         },
         {
-          "component": "drivers_peripheral_audio"
-        },
-        {
           "component": "drivers_interface_sensor"
         },
         {
@@ -562,10 +492,50 @@
           "component": "drivers_peripheral_memorytracker"
         },
         {
-          "component": "libdrm"
+          "component": "drivers_peripheral_display",
+          "features": [
+            "drivers_peripheral_display_vdi_default = true",
+            "drivers_peripheral_display_community = true"
+          ]
         },
         {
-          "component": "openmax"
+          "component": "drivers_devhost"
+        },
+        {
+          "component": "drivers_interface_user_auth"
+        },
+        {
+          "component": "drivers_peripheral_user_auth"
+        },
+        {
+          "component": "drivers_interface_power"
+        },
+        {
+          "component": "drivers_peripheral_power"
+        },
+        {
+          "component": "drivers_interface_camera"
+        },
+        {
+          "component": "drivers_interface_distributed_audio"
+        },
+        {
+          "component": "drivers_peripheral_audio"
+        },
+        {
+          "component": "drivers_interface_huks"
+        },
+        {
+          "component": "drivers_peripheral_huks"
+        },
+        {
+          "component": "drivers_interface_battery"
+        },
+        {
+          "component": "drivers_peripheral_battery"
+        },
+        {
+          "component": "drivers_peripheral_partitionslot"
         }
       ]
     },
@@ -659,6 +629,10 @@
           "features": [
             "access_token_enhance_capability = false"
           ]
+        },
+        {
+          "component": "asset",
+          "features": []
         },
         {
           "component": "huks"
@@ -987,6 +961,12 @@
           "component": "expat"
         },
         {
+          "component": "libdrm"
+        },
+        {
+          "component": "openmax"
+        },
+        {
           "component": "vma"
         },
         {
@@ -1044,9 +1024,6 @@
           "component": "libinput"
         },
         {
-          "component": "libudev"
-        },
-        {
           "component": "grpc"
         },
         {
@@ -1084,6 +1061,14 @@
       "components": [
         {
           "component": "previewer"
+        }
+      ]
+    },
+    {
+      "subsystem": "usb",
+      "components": [
+        {
+          "component": "usb_manager"
         }
       ]
     },
