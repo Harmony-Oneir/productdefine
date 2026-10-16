@@ -38,6 +38,9 @@
       "components": [
         {
           "component": "accesscontrol_cangjie_wrapper"
+        },
+        {
+          "component": "sandbox_manager"
         }
       ]
     },
@@ -154,9 +157,6 @@
           "component": "napi"
         },
         {
-          "component": "ace_engine_lite"
-        },
-        {
           "component": "arkui_cangjie_wrapper"
         },
         {
@@ -189,6 +189,12 @@
         },
         {
           "component": "bundlemanager_cangjie_wrapper"
+        },
+        {
+          "component": "app_domain_verify"
+        },
+        {
+          "component": "ecological_rule_manager"
         }
       ]
     },
@@ -277,6 +283,9 @@
         {
           "component": "memory_utils",
           "features": []
+        },
+        {
+          "component": "ylong_http"
         }
       ]
     },
@@ -378,6 +387,9 @@
         },
         {
           "component": "user_file_service"
+        },
+        {
+          "component": "app_file_service"
         }
       ]
     },
@@ -449,8 +461,8 @@
         {
           "component": "drivers_interface_display"
         },
-        { 
-          "component": "drivers_interface_usb" 
+        {
+          "component": "drivers_interface_usb"
         },
         {
           "component": "hdf_core"
@@ -536,19 +548,48 @@
         },
         {
           "component": "drivers_peripheral_partitionslot"
-        }
-      ]
-    },
-    {
-      "subsystem": "updater",
-      "components": [
+        },
         {
-          "component": "updater",
-          "features": [
-            "updater_feature_use_ptable = false",
-            "updater_feature_updater_gen_executable = true",
-            "updater_feature_sign_on_server = false"
-          ]
+          "component": "drivers_interface_ethernet"
+        },
+        {
+          "component": "drivers_interface_pin_auth"
+        },
+        {
+          "component": "drivers_interface_location_agnss"
+        },
+        {
+          "component": "drivers_interface_location_gnss"
+        },
+        {
+          "component": "drivers_interface_location_geofence"
+        },
+        {
+          "component": "drivers_interface_light"
+        },
+        {
+          "component": "drivers_interface_vibrator"
+        },
+        {
+          "component": "drivers_interface_thermal"
+        },
+        {
+          "component": "drivers_interface_drm"
+        },
+        {
+          "component": "drivers_interface_partitionslot"
+        },
+        {
+          "component": "drivers_peripheral_ethernet"
+        },
+        {
+          "component": "drivers_interface_face_auth"
+        },
+        {
+          "component": "external_device_manager"
+        },
+        {
+          "component": "drivers_interface_lpplayer"
         }
       ]
     },
@@ -604,6 +645,9 @@
         },
         {
           "component": "startup_cangjie_wrapper"
+        },
+        {
+          "component": "hvb"
         }
       ]
     },
@@ -667,6 +711,12 @@
         {
           "component": "security_guard",
           "features": []
+        },
+        {
+          "component": "dlp_permission_service"
+        },
+        {
+          "component": "security_component_manager"
         }
       ]
     },
@@ -698,6 +748,9 @@
         },
         {
           "component": "sensors_cangjie_wrapper"
+        },
+        {
+          "component": "start"
         }
       ]
     },
@@ -717,6 +770,9 @@
       "components": [
         {
           "component": "print_service"
+        },
+        {
+          "component": "print_fwk"
         }
       ]
     },
@@ -734,9 +790,6 @@
         },
         {
           "component": "display_manager"
-        },
-        {
-          "component": "powermgr_lite"
         },
         {
           "component": "powermgr_cangjie_wrapper"
@@ -796,6 +849,12 @@
         },
         {
           "component": "camera_framework"
+        },
+        {
+          "component": "video_processing_engine"
+        },
+        {
+          "component": "image_effect"
         }
       ]
     },
@@ -833,6 +892,12 @@
         },
         {
           "component": "device_usage_statistics"
+        },
+        {
+          "component": "background_task_mgr"
+        },
+        {
+          "component": "device_standby"
         }
       ]
     },
@@ -890,16 +955,13 @@
           "component": "resource_management"
         },
         {
-          "component": "i18n_lite"
-        },
-        {
-          "component": "resource_management_lite"
-        },
-        {
           "component": "global_cangjie_wrapper"
         },
         {
           "component": "system_resources"
+        },
+        {
+          "component": "font_manager"
         }
       ]
     },
@@ -1028,6 +1090,189 @@
         },
         {
           "component": "gptfdisk"
+        },
+        {
+          "component": "openssl"
+        },
+        {
+          "component": "curl"
+        },
+        {
+          "component": "cJSON"
+        },
+        {
+          "component": "json"
+        },
+        {
+          "component": "bounds_checking_function"
+        },
+        {
+          "component": "node"
+        },
+        {
+          "component": "jsoncpp"
+        },
+        {
+          "component": "libpng"
+        },
+        {
+          "component": "selinux"
+        },
+        {
+          "component": "vulkan-headers"
+        },
+        {
+          "component": "ffmpeg"
+        },
+        {
+          "component": "pulseaudio"
+        },
+        {
+          "component": "mksh"
+        },
+        {
+          "component": "toybox"
+        },
+        {
+          "component": "mbedtls"
+        },
+        {
+          "component": "libcoap"
+        },
+        {
+          "component": "libnl"
+        },
+        {
+          "component": "liburing"
+        },
+        {
+          "component": "googletest"
+        },
+        {
+          "component": "flatbuffers"
+        },
+        {
+          "component": "css-what"
+        },
+        {
+          "component": "jsframework"
+        },
+        {
+          "component": "opencl-headers"
+        },
+        {
+          "component": "opengles"
+        },
+        {
+          "component": "egl"
+        },
+        {
+          "component": "libphonenumber"
+        },
+        {
+          "component": "opensles"
+        },
+        {
+          "component": "opus"
+        },
+        {
+          "component": "dav1d"
+        },
+        {
+          "component": "lame"
+        },
+        {
+          "component": "opencore-amr"
+        },
+        {
+          "component": "libvpx"
+        },
+        {
+          "component": "libbpf"
+        },
+        {
+          "component": "vixl"
+        },
+        {
+          "component": "musl"
+        },
+        {
+          "component": "elfio"
+        },
+        {
+          "component": "mtdev"
+        },
+        {
+          "component": "libexif"
+        },
+        {
+          "component": "FreeBSD"
+        },
+        {
+          "component": "lz4"
+        },
+        {
+          "component": "rust_rust-openssl"
+        },
+        {
+          "component": "iptables"
+        },
+        {
+          "component": "libjpeg-turbo"
+        },
+        {
+          "component": "fsverity-utils"
+        },
+        {
+          "component": "libfuse"
+        },
+        {
+          "component": "freetype"
+        },
+        {
+          "component": "re2"
+        },
+        {
+          "component": "harfbuzz"
+        },
+        {
+          "component": "exfatprogs"
+        },
+        {
+          "component": "f2fs-tools"
+        },
+        {
+          "component": "ntfs-3g"
+        },
+        {
+          "component": "bzip2"
+        },
+        {
+          "component": "libtiff"
+        },
+        {
+          "component": "popt"
+        },
+        {
+          "component": "meshoptimizer"
+        },
+        {
+          "component": "cares"
+        },
+        {
+          "component": "nghttp2"
+        },
+        {
+          "component": "brotli"
+        },
+        {
+          "component": "backends"
+        },
+        {
+          "component": "cups"
+        },
+        {
+          "component": "cups-filters"
         }
       ]
     },
@@ -1053,14 +1298,6 @@
       "components": [
         {
           "component": "device_status"
-        }
-      ]
-    },
-    {
-      "subsystem": "ide",
-      "components": [
-        {
-          "component": "previewer"
         }
       ]
     },
@@ -1096,6 +1333,25 @@
       "components": [
         {
           "component": "game_controller_framework"
+        }
+      ]
+    },
+    {
+      "subsystem": "castplus",
+      "components": [
+        {
+          "component": "cast_engine"
+        },
+        {
+          "component": "sharing_framework"
+        }
+      ]
+    },
+    {
+      "subsystem": "tee",
+      "components": [
+        {
+          "component": "tee_client"
         }
       ]
     }
