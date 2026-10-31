@@ -225,7 +225,15 @@
           "component": "net_manager"
         },
         {
-          "component": "netmanager_base"
+          "component": "netmanager_base",
+          "features": [
+        	"netmanager_base_enable_traffic_statistic = false",
+        	"netmanager_base_enable_feature_net_firewall = false",
+        	"netmanager_base_enable_feature_sysvpn = false",
+        	"netmanager_base_enable_feature_wearable_distributed_net = false",
+        	"netmanager_base_feature_support_powermanager = false",
+        	"netmanager_base_enable_pac_proxy = false"
+          ]
         },
         {
           "component": "netmanager_ext"
@@ -237,7 +245,18 @@
           "component": "dsoftbus"
         },
         {
-          "component": "wifi"
+          "component": "wifi",
+          "features": [
+        	"wifi_feature_with_hdi_wpa_supported = false",
+        	"wifi_feature_non_hdf_driver = true",
+        	"wifi_feature_with_hdi_chip_supported = false",
+        	"wifi_feature_with_p2p = false",
+        	"wifi_feature_with_ap_intf = false",
+        	"wifi_feature_with_encryption = false",
+        	"wifi_feature_with_security_detect = false",
+        	"wifi_feature_with_portal_login = false",
+        	"wifi_feature_with_data_report = false"
+          ]
         },
         {
           "component": "dhcp"
