@@ -247,10 +247,10 @@
         {
           "component": "wifi",
           "features": [
-        	"wifi_feature_with_hdi_wpa_supported = false",
-        	"wifi_feature_non_hdf_driver = true",
-        	"wifi_feature_with_hdi_chip_supported = false",
-        	"wifi_feature_with_p2p = false",
+        	"wifi_feature_with_hdi_wpa_supported = true",
+        	"wifi_feature_non_hdf_driver = false",
+        	"wifi_feature_with_hdi_chip_supported = true",
+        	"wifi_feature_with_p2p = true",
         	"wifi_feature_with_ap_intf = false",
         	"wifi_feature_with_encryption = false",
         	"wifi_feature_with_security_detect = false",
