@@ -248,14 +248,17 @@
           "component": "wifi",
           "features": [
         	"wifi_feature_with_hdi_wpa_supported = true",
-        	"wifi_feature_non_hdf_driver = false",
-        	"wifi_feature_with_hdi_chip_supported = true",
+        	"wifi_feature_non_hdf_driver = true",
+        	"wifi_feature_with_hdi_chip_supported = false",
         	"wifi_feature_with_p2p = true",
         	"wifi_feature_with_ap_intf = false",
         	"wifi_feature_with_encryption = false",
         	"wifi_feature_with_security_detect = false",
         	"wifi_feature_with_portal_login = false",
-        	"wifi_feature_with_data_report = false"
+        	"wifi_feature_with_data_report = false",
+                "wifi_feature_non_seperate_p2p = true",
+                "wifi_feature_p2p_random_mac_addr = false"
+                
           ]
         },
         {
@@ -511,7 +514,10 @@
           "component": "drivers_interface_wlan"
         },
         {
-          "component": "drivers_peripheral_wlan"
+          "component": "drivers_peripheral_wlan",
+          "features": [
+             "drivers_peripheral_wlan_feature_enable_HDF_NL80211 = true"
+          ]
         },
         {
           "component": "drivers_interface_input"
