@@ -1,0 +1,3 @@
+# fstab for x86_64_oneir_usb (USB flash drive: sda1 ESP, sda2 system, sda3 userdata)
+#<src>              <mnt_point>  <type>  <mnt_flags and options>  <fs_mgr_flags>
+/dev/block/sda3      /data        ext4    noatime,nosuid,nodev     wait
