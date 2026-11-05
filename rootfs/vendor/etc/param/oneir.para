@@ -5,3 +5,6 @@ const.secure=0
 persist.hdc.mode.tcp=enable
 persist.hdc.mode.usb=disable
 persist.hdc.port=8710
+# Общий режим hdcd. В сборке с HDC_EMULATOR пустое значение означает режим моста
+# (подключение через устройство эмулятора), и TCP выключается
+persist.hdc.mode=tcp
