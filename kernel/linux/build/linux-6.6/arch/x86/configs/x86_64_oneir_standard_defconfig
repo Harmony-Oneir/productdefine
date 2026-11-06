@@ -325,6 +325,7 @@ CONFIG_MODULE_UNLOAD=y
 CONFIG_FW_LOADER=y
 CONFIG_CFG80211_WEXT=y
 CONFIG_MAC80211_HWSIM=m
+
 # Wi-Fi: основные семейства ноутбучных адаптеров
 CONFIG_ATH10K=m
 CONFIG_ATH10K_PCI=m          # QCA9377
@@ -343,6 +344,7 @@ CONFIG_MT7921E=m             # MediaTek
 CONFIG_BRCMFMAC=m            # Broadcom
 CONFIG_RT2X00=m
 CONFIG_RT2800USB=m
+
 # Проводные карты и USB-адаптеры, на случай если Wi-Fi не заведётся
 CONFIG_R8169=m
 CONFIG_E1000E=m
@@ -351,15 +353,19 @@ CONFIG_ALX=m
 CONFIG_USB_RTL8152=m
 CONFIG_USB_NET_AX88179_178A=m
 CONFIG_USB_NET_CDCETHER=m
+
 # BPF: файловая система /sys/fs/bpf и учёт трафика в netsysnative
 CONFIG_BPF_SYSCALL=y
 CONFIG_BPF_JIT=y
 CONFIG_CGROUP_BPF=y
+
 # Учёт давления на ресурсы (/proc/pressure/*)
 CONFIG_PSI=y
+
 # Конфигурация ядра в /proc/config.gz
 CONFIG_IKCONFIG=y
 CONFIG_IKCONFIG_PROC=y
+
 # FUSE (понадобится менеджеру хранилищ и приложениям)
 CONFIG_FUSE_FS=y
 CONFIG_EXTRA_FIRMWARE="regulatory.db regulatory.db.p7s"
@@ -375,3 +381,7 @@ CONFIG_AUTHORITY_CTRL=y
 CONFIG_QOS_CTRL=y
 CONFIG_RTG_AUTHORITY=y
 CONFIG_QOS_AUTHORITY=y
+# Число политик QoS: служба qos_manager задаёт политики с номерами 1–5
+# (QOS_POLICY_FOCUS = 5), а ядро принимает номера меньше QOS_POLICY_MAX_NR.
+# Значение по умолчанию 5 отвергает политику focus.
+CONFIG_QOS_POLICY_MAX_NR=6
