@@ -370,3 +370,8 @@ CONFIG_ZRAM=y
 CONFIG_ZRAM_DEF_COMP_LZ4=y
 # /sys/block/zram0/idle — учёт простаивающих страниц (его ждёт менеджер памяти)
 CONFIG_ZRAM_MEMORY_TRACKING=y
+# Управление QoS потоков и права на RTG/QoS (common_modules/qos_auth), как на rk3568
+CONFIG_AUTHORITY_CTRL=y
+CONFIG_QOS_CTRL=y
+CONFIG_RTG_AUTHORITY=y
+CONFIG_QOS_AUTHORITY=y
