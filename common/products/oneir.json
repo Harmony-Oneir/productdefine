@@ -236,7 +236,20 @@
           ]
         },
         {
-          "component": "netmanager_ext"
+          "component": "netmanager_ext",
+            "features": [
+               "netmanager_ext_feature_ethernet = true",
+               "netmanager_ext_feature_share = false",
+               "netmanager_ext_feature_mdns = false",
+               "netmanager_ext_feature_sysvpn = false",
+               "netmanager_ext_feature_vpn = false",
+               "netmanager_ext_feature_vpnext = false",
+               "netmanager_ext_feature_vpn_for_user0 = false",
+               "netmanager_ext_feature_net_firewall = false",
+               "netmanager_ext_feature_wearable_distributed_net = false",
+               "netmanager_ext_feature_networkslice = false",
+               "netmanager_ext_fpga_mode_enable = false"
+          ]
         },
         {
           "component": "netstack"
@@ -257,8 +270,9 @@
         	"wifi_feature_with_portal_login = false",
         	"wifi_feature_with_data_report = false",
                 "wifi_feature_non_seperate_p2p = true",
-                "wifi_feature_p2p_random_mac_addr = false"
-                
+                "wifi_feature_p2p_random_mac_addr = false",
+                "wifi_feature_with_scan_control = false",
+                "wifi_feature_screen_always_on = true"
           ]
         },
         {
@@ -520,7 +534,8 @@
                "drivers_peripheral_wlan_feature_enable_HDF_UT = false",
                "drivers_peripheral_wlan_feature_vendor = default",
                "drivers_peripheral_wlan_p2p_name = p2p-dev-wlan0",
-               "drivers_peripheral_wlan_feature_enable_HDF_WLAN_EXTEND_VDI = false"
+               "drivers_peripheral_wlan_feature_enable_HDF_WLAN_EXTEND_VDI = false",
+               "drivers_peripheral_wlan_feature_country_code_mode = auto"
           ]
         },
         {
