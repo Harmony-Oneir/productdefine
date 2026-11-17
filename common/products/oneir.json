@@ -36,10 +36,8 @@
     {
 	"subsystem": "oneir",
 	"components": [
-	 {
-	   "component": "oneir_display",
-           "features": []
-         }
+	   {"component": "oneir_display", "features": []}, 
+       {"component": "oneir_bt_vendor"}
        ]
     },
     {
